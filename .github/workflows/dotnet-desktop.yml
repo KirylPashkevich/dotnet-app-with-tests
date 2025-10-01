@@ -17,7 +17,7 @@ jobs:
       with:
         dotnet-version: '9.0' # Use the correct .NET version
     - name: Restore dependencies
-      run: dotnet restore MyApp.csproj # Specify the project file
+      run: dotnet restore MyApp/MyApp.csproj # Specify the correct path to the project file
     - name: Build
       run: dotnet build --no-restore --configuration Release
     - name: Test
